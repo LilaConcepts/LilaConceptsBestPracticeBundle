@@ -1,5 +1,5 @@
 {
-    "name": "lilaconcepts/lila-best-practice-bundle",
+    "name": "lilaconcepts/best-practice-bundle",
     "version": "1.0.0-alpha",
     "description": "Simple bundle to show best practice bundle development",
     "keywords": ["symfony", "development", "bundle"],
