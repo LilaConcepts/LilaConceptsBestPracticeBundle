@@ -1,0 +1,7 @@
+parameters:
+#    lila_best_practice.example.class: Lila\BestPracticeBundle\Example
+
+services:
+#    lila_best_practice.example:
+#        class: %lila_best_practice.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

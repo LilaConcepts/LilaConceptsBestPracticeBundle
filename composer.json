@@ -1,0 +1,23 @@
+{
+    "name": "Lila/BestPracticeBundle",
+    "version": "1.0.0",
+    "description": "Simple library to show best practice bundle development",
+    "keywords": ["symfony", "devlopment", "bundle"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andre Lambert",
+            "email": "afj.lambert@me.com",
+            "homepage": "http://digitaalcv.nl/"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.*",
+        "symfony/framework-bundle": "2.*"
+    },
+    "autoload":     {
+        "psr-0": { "Lila\\Bundle\\BestPracticeBundle": "" }
+    },
+    "target-dir": "Lila/Bundle/BestPracticeBundle"
+}
