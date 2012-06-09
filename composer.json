@@ -1,8 +1,8 @@
 {
-    "name": "Lila/BestPracticeBundle",
-    "version": "1.0.0",
-    "description": "Simple library to show best practice bundle development",
-    "keywords": ["symfony", "devlopment", "bundle"],
+    "name": "lilaconcepts/lila-best-practice-bundle",
+    "version": "1.0.0-alpha",
+    "description": "Simple bundle to show best practice bundle development",
+    "keywords": ["symfony", "development", "bundle"],
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
@@ -13,8 +13,9 @@
         }
     ],
     "require": {
-        "php": ">=5.3.*",
-        "symfony/framework-bundle": "2.*"
+        "php": ">=5.3",
+        "symfony/framework-bundle": "2.*",
+        "symfony/symfony": "2.*"
     },
     "autoload":     {
         "psr-0": { "Lila\\Bundle\\BestPracticeBundle": "" }

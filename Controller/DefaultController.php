@@ -1,6 +1,6 @@
 <?php
 
-namespace Lila\BestPracticeBundle\Controller;
+namespace Lila\Bundle\BestPracticeBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 

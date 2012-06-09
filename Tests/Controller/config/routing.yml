@@ -1,0 +1,6 @@
+LilaBestPracticeBundle:
+    resource: "@LilaBestPracticeBundle/Resources/config/routing.yml"
+
+TestBundle:
+    resource: "@TestBundle/Controller/"
+    type: annotation

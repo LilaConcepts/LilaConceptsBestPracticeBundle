@@ -1,6 +1,6 @@
 <?php
 
-namespace Lila\BestPracticeBundle;
+namespace Lila\Bundle\BestPracticeBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
