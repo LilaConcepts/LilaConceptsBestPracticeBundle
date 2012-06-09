@@ -8,8 +8,7 @@
          convertWarningsToExceptions="true"
          processIsolation="false"
          stopOnFailure="false"
-         syntaxCheck="false"
-         bootstrap="./vendor/autoload.php">
+         syntaxCheck="false">
     <testsuites>
         <testsuite name="BestPractice Test Suite">
             <directory>./Tests</directory>
