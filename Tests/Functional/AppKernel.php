@@ -1,6 +1,6 @@
 <?php
 
-namespace Lila\Bundle\BestPracticeBundle\Tests\Controller;
+namespace Lila\Bundle\BestPracticeBundle\Tests\Functional;
 
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Config\Loader\LoaderInterface;
@@ -32,7 +32,7 @@ class AppKernel extends Kernel
             new \Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new \Symfony\Bundle\TwigBundle\TwigBundle(),
             new \Lila\Bundle\BestPracticeBundle\LilaBestPracticeBundle(),
-            new \Lila\Bundle\BestPracticeBundle\Tests\Controller\TestBundle\TestBundle(),
+            new \Lila\Bundle\BestPracticeBundle\Tests\Functional\TestBundle\TestBundle(),
         );
     }
 

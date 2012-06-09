@@ -1,6 +1,3 @@
-# imports:
-#   - { resource: database.php }
-
 framework:
     secret: test
     test: ~
@@ -19,13 +16,3 @@ framework:
 twig:
     debug:            %kernel.debug%
     strict_variables: %kernel.debug%
-
-# doctrine:
-#     orm:
-#         auto_generate_proxy_classes: "%kernel.debug%"
-#         entity_managers:
-#             default:
-#                 auto_mapping: true
-
-# services:
-#     em: "@doctrine.orm.entity_manager"
