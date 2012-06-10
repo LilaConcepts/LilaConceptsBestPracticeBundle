@@ -136,7 +136,7 @@ Now run the following code:
     php composer.phar install
     echo -e "\n\nDone, now update your AppKernel with:\n\n    new ${COMPANY}\Bundle\\${BUNDLE}\\${COMPANY}${BUNDLE}()\n"
 
-Now [update your AppKernel.php](best-practice-bundle#what-is-best-practice-bundle) described above.
+Now [update your AppKernel.php](#configure) described above.
 
 Documentation
 -------------
