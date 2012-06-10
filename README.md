@@ -58,6 +58,9 @@ And install the new bundle
 
     php composer.phar update lilaconcepts/best-practice-bundle
 
+Configure
+---------
+
 The final step is to add the bundle to your AppKernel.php.
 
     <?php
@@ -76,6 +79,9 @@ The final step is to add the bundle to your AppKernel.php.
             }
         );
 
+Unittest the bundle
+-------------------
+
 You can now unittest the module, just type:
 
     phpunit
@@ -92,6 +98,45 @@ If you want to download and unittest the code, you don't need a working Symfony 
     curl -s http://getcomposer.org/installer | php
     php composer.phar install
     phpunit
+
+Cloning the Bundle for your own use
+-----------------------------------
+
+Go into your projects vendor/ directory and set your Bundle and Company name.
+
+    cd vendor/
+    BUNDLE=MainBundle
+    COMPANY=Acme
+
+Now run the following code:
+
+    SHORTBUNDLE=`echo ${BUNDLE} | sed 's/Bundle//'`
+    COMPLETENAME=${COMPANY}${SHORTBUNDLE}
+    LOGICALNAME=`echo ${COMPANY}_${SHORTBUNDLE} | tr '[A-Z]' '[a-z]'`
+    DIRNAME=`echo ${SHORTBUNDLE} | tr '[A-Z]' '[a-z]'`-bundle
+    FULLPATH=`echo ${COMPANY}/${DIRNAME} | tr '[A-Z]' '[a-z]'`/${COMPANY}/Bundle/
+    
+    mkdir -p ${FULLPATH}
+    cd ${FULLPATH}
+    git clone https://github.com/LilaConcepts/best-practice-bundle.git ${BUNDLE}
+    cd ${BUNDLE}
+
+    FILES=`find . -regex '.*/*.[php|yml]' -type f`
+    sed -i '' -e 's/Lila\\Bundle\\BestPracticeBundle/'${COMPANY}'\\Bundle\\'${BUNDLE}'/g' ${FILES}
+    sed -i '' -e 's/lila_best_practice/'${LOGICALNAME}'/g' ${FILES}
+    sed -i '' -e 's/LilaBestPracticeBundle/'${COMPLETENAME}Bundle'/g' ${FILES}
+    sed -i '' -e 's/LilaBestPracticeExtension/'${COMPLETENAME}Extension'/g' ${FILES}
+    sed -i '' -e 's/Lila/'${COMPANY}'/g' composer.json
+    sed -i '' -e 's/BestPracticeBundle/'${BUNDLE}'/g' composer.json
+
+    mv ./DependencyInjection/LilaBestPracticeExtension.php ./DependencyInjection/${COMPLETENAME}Extension.php
+    mv ./LilaBestPracticeBundle.php ./${COMPLETENAME}Bundle.php
+
+    curl -s http://getcomposer.org/installer | php
+    php composer.phar install
+    echo -e "\n\nDone, now update your AppKernel with:\n\n    new ${COMPANY}\Bundle\\${BUNDLE}\\${COMPANY}${BUNDLE}()\n"
+
+Now update your AppKernel.php described above under [Configure](best-practice-bundle#what-is-best-practice-bundle)
 
 Documentation
 -------------
