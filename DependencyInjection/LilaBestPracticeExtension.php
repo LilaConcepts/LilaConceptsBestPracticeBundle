@@ -1,6 +1,6 @@
 <?php
 
-namespace Lila\BestPracticeBundle\DependencyInjection;
+namespace Lila\Bundle\BestPracticeBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
