@@ -115,9 +115,7 @@ Fork/clone the Bundle for your own use
 
 Click the Fork button on [https://github.com/LilaConcepts/best-practice-bundle](https://github.com/LilaConcepts/best-practice-bundle).
 Then click on Admin and rename the bundle. Please stick with the naming conventions and use something like 'myfeature-bundle' or 'myadmin-bundle'.
-You are ready with the github part, it's time to clone the respository into a temporary folder and make some changes. 
-
-Now go into your projects vendor/ directory and set your Github URL and Bundle/Company name.
+You are ready with the github part, it's time to clone the respository into a temporary folder and make some changes. Set your own Github URL and Bundle/Company name.
 
 ```bash
 mkdir temp/ && cd temp/
