@@ -133,10 +133,7 @@ SHORTBUNDLE=`echo ${BUNDLE} | sed 's/Bundle//'`
 COMPLETENAME=${COMPANY}${SHORTBUNDLE}
 LOGICALNAME=`echo ${COMPANY}_${SHORTBUNDLE} | tr '[A-Z]' '[a-z]'`
 DIRNAME=`echo ${SHORTBUNDLE} | tr '[A-Z]' '[a-z]'`-bundle
-FULLPATH=`echo ${COMPANY}/${DIRNAME} | tr '[A-Z]' '[a-z]'`/${COMPANY}/Bundle/
-    
-mkdir -p ${FULLPATH}
-cd ${FULLPATH}
+
 git clone ${GITHUBURL} ${BUNDLE}
 cd ${BUNDLE}
 
@@ -151,10 +148,14 @@ sed -i '' -e 's/BestPracticeBundle/'${BUNDLE}'/g' composer.json
 mv ./DependencyInjection/LilaBestPracticeExtension.php ./DependencyInjection/${COMPLETENAME}Extension.php
 mv ./LilaBestPracticeBundle.php ./${COMPLETENAME}Bundle.php
 
+echo -e "\n\nDone, please inspect the changes and push it back to github:\n\n    git push\n\nYou will need this later for your AppKernel.php:\n\n    new ${COMPANY}\Bundle\\${BUNDLE}\\${COMPANY}${BUNDLE}()\n"
+```
+
+Optionally:
+```bash
 curl -s http://getcomposer.org/installer | php
 php composer.phar install
-echo -e "\n\nDone, please inspect the changes and push it back to github:\n\n    git push"
-echo -e "\n\nYou will need this later:\n    new ${COMPANY}\Bundle\\${BUNDLE}\\${COMPANY}${BUNDLE}()\n"
+phpunit
 ```
 
 Be sure to update the following files before pushing it back to Github:
@@ -168,6 +169,8 @@ Be sure to update the following files before pushing it back to Github:
 Push it back to Github:
 
 ```bash
+git add .
+git commit -a -m "Initial checkin"
 git push
 ```
 
@@ -175,7 +178,7 @@ Head over to [Packagist](http://packagist.org/) and submit your Bundle.
 Optional: setup a Github Service Hook so packagist will be informed automatically.
 
 Now install your bundle [following these instructions](#installation) with your own packagist name of course.
-
+You can remove the temp/ directory we created and work inside the vendor/.../Bundle/YourBundle directory.
 
 Documentation
 -------------
