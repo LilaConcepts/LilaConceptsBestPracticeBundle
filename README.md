@@ -7,7 +7,7 @@ This is a simple bundle to show different [best practices for Symfony Bundles](h
 development. The master-branch follows the future [Symfony 2.1 release](http://symfony.com/blog/towards-symfony-2-1-documentation) ([upgrade notes](https://github.com/symfony/symfony/blob/master/UPGRADE-2.1.md)).
 
 Use the bundle as a reference (or cheatsheet) for your own bundles. Also look
-at the [documentation](best-practice-bundle/blob/master/Resources/doc/index.rst) and comments in the source if you forgot how to do something.
+at the [documentation](https://github.com/LilaConcepts/best-practice-bundle/blob/master/Resources/doc/index.rst) and comments in the source if you forgot how to do something.
 
 Of course you can use this bundle as a "Boilerplate" or empty/starter bundle if
 you plan to build your own bundle. Please search [knpBundles.com](http://knpbundles.com/) before you build a new bundle. See if something simimlar is already out there.
@@ -15,13 +15,13 @@ you plan to build your own bundle. Please search [knpBundles.com](http://knpbund
 This bundle contains:
 * the [directory tree structure](http://symfony.com/doc/current/cookbook/bundles/best_practices.html) advised by Symfony
 * follows the [coding standards](http://symfony.com/doc/current/contributing/code/standards.html)
-* has [documentation examples](best-practice-bundle/blob/master/Resources/doc/index.rst) based [on reStructuredText](http://symfony.com/doc/current/contributing/documentation/format.html)
+* has [documentation examples](https://github.com/LilaConcepts/best-practice-bundle/blob/master/Resources/doc/index.rst) based [on reStructuredText](http://symfony.com/doc/current/contributing/documentation/format.html)
 * uses [Twig](http://twig.sensiolabs.org/) for [templating](http://symfony.com/doc/current/cookbook/templating/index.html)
 * comes with [unittests](http://symfony.com/doc/current/book/testing.html) (including [Functional tests](http://symfony.com/doc/current/cookbook/testing/doctrine.html#functional-testing))
 * uses [Composer](http://getcomposer.org/doc/) for dependancy management
 * uses [Travis CI](http://about.travis-ci.org/docs/) as a build bot for continuous integration
 * is hosted on [Github](https://github.com/) (with Service Hooks)
-* a customized [.gitignore](best-practice-bundle/blob/master/.gitignore) file
+* a customized [.gitignore](https://github.com/LilaConcepts/best-practice-bundle/blob/master/.gitignore) file
 
 Future features:
 * clone the bundle via commandline as an alternative to generate:bundle
@@ -141,13 +141,13 @@ Now [update your AppKernel.php](#configure) described above.
 Documentation
 -------------
 
-For more information see [Resources/doc/index.rst](best-practice-bundle/blob/master/Resources/doc/index.rst).
+For more information see [Resources/doc/index.rst](https://github.com/LilaConcepts/best-practice-bundle/blob/master/Resources/doc/index.rst).
 Feel free to fix typo's.
 
 Contributing
 ------------
 
 If you like to help making Best Practice Bundle better, or if you see anything that's
-wrong, send me a personal message or provide a bug report under [issues](best-practice-bundle/issues).
+wrong, send me a personal message or provide a bug report under [issues](https://github.com/LilaConcepts/best-practice-bundle/issues).
 Even better if you could send a pull-request.
 
