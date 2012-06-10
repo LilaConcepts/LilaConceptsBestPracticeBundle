@@ -27,6 +27,11 @@ Future features:
 * clone the bundle via commandline as an alternative to generate:bundle
 * multiple languages
 
+Links:
+* [Best Practice Bundle on Packagist.org](http://packagist.org/packages/LilaConcepts/LilaConceptsBestPracticeBundle)
+* [Best Practice Bundle on KnpBundles.com](http://knpbundles.com/LilaConcepts/LilaConceptsBestPracticeBundle)
+* [Best Practice Bundle on Travis CI](http://travis-ci.org/#!/LilaConcepts/LilaConceptsBestPracticeBundle)
+
 Requirements
 ------------
 
