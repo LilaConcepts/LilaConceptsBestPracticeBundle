@@ -110,15 +110,20 @@ php composer.phar install
 phpunit
 ```
 
-Cloning the Bundle for your own use
------------------------------------
+Fork/clone the Bundle for your own use
+--------------------------------------
 
-Go into your projects vendor/ directory and set your Bundle and Company name.
+Click the Fork button on [https://github.com/LilaConcepts/best-practice-bundle](https://github.com/LilaConcepts/best-practice-bundle).
+Then click on Admin and rename the bundle. Please stick with the naming conventions and use something like 'myfeature-bundle' or 'myadmin-bundle'.
+You are ready with the github part, it's time to clone the respository into a temporary folder and make some changes. 
+
+Now go into your projects vendor/ directory and set your Github URL and Bundle/Company name.
 
 ```bash
-cd vendor/
+mkdir temp/ && cd temp/
 BUNDLE=MainBundle
 COMPANY=Acme
+GITHUBURL=https://github.com/[your account name]/[your bundle name]-bundle.git
 ```
 
 Now run the following code:
@@ -132,7 +137,7 @@ FULLPATH=`echo ${COMPANY}/${DIRNAME} | tr '[A-Z]' '[a-z]'`/${COMPANY}/Bundle/
     
 mkdir -p ${FULLPATH}
 cd ${FULLPATH}
-git clone https://github.com/LilaConcepts/best-practice-bundle.git ${BUNDLE}
+git clone ${GITHUBURL} ${BUNDLE}
 cd ${BUNDLE}
 
 FILES=`find . -regex '.*/*.[php|yml]' -type f`
@@ -148,18 +153,29 @@ mv ./LilaBestPracticeBundle.php ./${COMPLETENAME}Bundle.php
 
 curl -s http://getcomposer.org/installer | php
 php composer.phar install
-echo -e "\n\nDone, now update your AppKernel with:\n\n    new ${COMPANY}\Bundle\\${BUNDLE}\\${COMPANY}${BUNDLE}()\n"
+echo -e "\n\nDone, please inspect the changes and push it back to github:\n\n    git push"
+echo -e "\n\nYou will need this later:\n    new ${COMPANY}\Bundle\\${BUNDLE}\\${COMPANY}${BUNDLE}()\n"
 ```
 
-Now [update your AppKernel.php](#configure) described above.
-
-Be sure to update the following files:
+Be sure to update the following files before pushing it back to Github:
 - composer.json
 - README.md
 - LICENCE
 - CONTRIBUTORS.md
 - CHANGELOG's
 - Resource/doc/*
+
+Push it back to Github:
+
+```bash
+git push
+```
+
+Head over to [Packagist](http://packagist.org/) and submit your Bundle.
+Optional: setup a Github Service Hook so packagist will be informed automatically.
+
+Now install your bundle [following these instructions](#installation) with your own packagist name of course.
+
 
 Documentation
 -------------
