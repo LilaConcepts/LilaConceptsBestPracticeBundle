@@ -12,10 +12,10 @@
          bootstrap="./vendor/autoload.php">
 
     <!--
-		    <php>
-		        <ini name="intl.default_locale" value="en"/>
+        <php>
+            <ini name="intl.default_locale" value="en"/>
             <server name="KERNEL_DIR" value="/Users/andrelambert/Sites/digitaalcv/app/" />
-		    </php>
+        </php>
     -->
 
     <testsuites>
