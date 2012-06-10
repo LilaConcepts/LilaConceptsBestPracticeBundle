@@ -31,7 +31,7 @@ class AppKernel extends Kernel
         return array(
             new \Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new \Symfony\Bundle\TwigBundle\TwigBundle(),
-            new \LilaConcepts\Bundle\LilaConceptsBestPracticeBundle\LilaBestPracticeBundle(),
+            new \LilaConcepts\Bundle\LilaConceptsBestPracticeBundle\LilaConceptsBestPracticeBundle(),
             new \LilaConcepts\Bundle\LilaConceptsBestPracticeBundle\Tests\Functional\TestBundle\TestBundle(),
         );
     }
