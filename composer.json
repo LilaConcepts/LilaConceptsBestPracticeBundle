@@ -1,7 +1,7 @@
 {
-    "name": "lilaconcepts/best-practice-bundle",
+    "name": "LilaConcepts/LilaConceptsBestPracticeBundle",
     "version": "1.0.0-alpha",
-    "description": "Simple bundle to show best practice bundle development",
+    "description": "Simple common, starter, empty, boilerplate-bundle to show best practice bundle development for Symfony2.1. This bundle has the right directory structure, coding standards, unittests and functional tests. It uses the Travis Continuous Integration buildbot, Composer for dependency management and Twig for templating. Read the documentation and fork/clone if you wish.",
     "keywords": ["symfony", "development", "bundle"],
     "type": "symfony-bundle",
     "license": "MIT",
@@ -23,7 +23,7 @@
         "symfony/symfony": "2.*"
     },
     "autoload":     {
-        "psr-0": { "Lila\\Bundle\\BestPracticeBundle": "" }
+        "psr-0": { "LilaConcepts\\Bundle\\LilaConceptsBestPracticeBundle": "" }
     },
-    "target-dir": "Lila/Bundle/BestPracticeBundle"
+    "target-dir": "LilaConcepts/Bundle/LilaConceptsBestPracticeBundle"
 }
