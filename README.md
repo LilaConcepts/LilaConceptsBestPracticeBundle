@@ -38,8 +38,8 @@ Installation
 
 Add the following line to your composer.json file.
 
-```json
-    //composer.json
+```js
+//composer.json
     {
         //...
 
