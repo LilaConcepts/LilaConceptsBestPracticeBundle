@@ -4,7 +4,7 @@ What is Best Practice Bundle?
 [![Build Status](https://secure.travis-ci.org/LilaConcepts/best-practice-bundle.png?branch=master)](http://travis-ci.org/LilaConcepts/best-practice-bundle)
 
 This is a simple bundle to show different [best practices for Symfony Bundles](http://symfony.com/doc/current/cookbook/bundles/index.html)
-development. The master-branch follows the future [Symfony 2.1 release](http://symfony.com/blog/towards-symfony-2-1-documentation) ([upgrade notes](https://github.com/symfony/symfony/blob/master/UPGRADE-2.1.md)).
+development. This bundle could as well be named starter-bundle, empty-bundle or boilerplate-bundle. The master-branch follows the future [Symfony 2.1 release](http://symfony.com/blog/towards-symfony-2-1-documentation) ([upgrade notes](https://github.com/symfony/symfony/blob/master/UPGRADE-2.1.md)).
 
 Use the bundle as a reference (or cheatsheet) for your own bundles. Also look
 at the [documentation](https://github.com/LilaConcepts/best-practice-bundle/blob/master/Resources/doc/index.rst) and comments in the source if you forgot how to do something.
