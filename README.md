@@ -10,7 +10,7 @@ Use the bundle as a reference (or cheatsheet) for your own bundles. Also look
 at the [documentation](https://github.com/LilaConcepts/best-practice-bundle/blob/master/Resources/doc/index.rst) and comments in the source if you forgot how to do something.
 
 Of course you can use this bundle as a "Boilerplate" or empty/starter bundle if
-you plan to build your own bundle. [Fork or clone this bundle](forkclone-the-bundle-for-your-own-use) as you wish. Please search [knpBundles.com](http://knpbundles.com/) before you build a new bundle. See if something simimlar is already out there.
+you plan to build your own bundle. [Fork or clone this bundle](#forkclone-the-bundle-for-your-own-use) if you wish. Please search [knpBundles.com](http://knpbundles.com/) before you build a new bundle. See if something simimlar is already out there.
 
 This bundle contains:
 * the [directory tree structure](http://symfony.com/doc/current/cookbook/bundles/best_practices.html) advised by Symfony
