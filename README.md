@@ -27,6 +27,7 @@ Future features:
 * clone the bundle via commandline as an alternative to generate:bundle
 * multiple languages
 * provide tutorials
+* more information on routing and forms
 
 Links:
 * [Best Practice Bundle on Packagist.org](http://packagist.org/packages/LilaConcepts/LilaConceptsBestPracticeBundle)
