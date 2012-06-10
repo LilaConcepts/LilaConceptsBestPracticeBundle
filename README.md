@@ -39,16 +39,16 @@ Installation
 Add the following line to your composer.json file.
 
 ```json
-    // composer.json
+    //composer.json
     {
-        // ...
+        //...
 
         "require": {
-            // ...
+            //...
             "lilaconcepts/best-practice-bundle" : "dev-master"
         }
 
-        // ...
+        //...
     }
 ```
 
