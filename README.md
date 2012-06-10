@@ -24,6 +24,7 @@ This bundle contains:
 * a customized [.gitignore](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/blob/master/.gitignore) file
 
 Future features and documentation (help appreciated):
+* make /best-practice/ available for the functional test
 * clone the bundle via command as an alternative to generate:bundle
 * multiple languages / locale / i18n examples
 * provide tutorials / blog-posts (yaml, caching with Varnish, Vagrant etc.)
