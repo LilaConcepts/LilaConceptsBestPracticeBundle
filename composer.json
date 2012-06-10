@@ -10,6 +10,11 @@
             "name": "Andre Lambert",
             "email": "afj.lambert@me.com",
             "homepage": "http://digitaalcv.nl/"
+        },
+        {
+            "name": "Evert Littooy",
+            "email": "evertonline@gmail.com",
+            "homepage": "http://littooy.nl/"
         }
     ],
     "require": {
