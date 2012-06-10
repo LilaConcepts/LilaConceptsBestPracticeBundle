@@ -138,6 +138,14 @@ Now run the following code:
 
 Now [update your AppKernel.php](#configure) described above.
 
+Be sure to update the following files:
+- composer.json
+- README.md
+- LICENCE
+- CONTRIBUTORS.md
+- CHANGELOG's
+- Resource/doc/*
+
 Documentation
 -------------
 
