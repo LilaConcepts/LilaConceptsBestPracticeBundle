@@ -26,6 +26,7 @@ This bundle contains:
 Future features:
 * clone the bundle via commandline as an alternative to generate:bundle
 * multiple languages
+* provide tutorials
 
 Links:
 * [Best Practice Bundle on Packagist.org](http://packagist.org/packages/LilaConcepts/LilaConceptsBestPracticeBundle)
