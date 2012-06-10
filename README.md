@@ -23,11 +23,18 @@ This bundle contains:
 * is hosted on [Github](https://github.com/) (with Service Hooks)
 * a customized [.gitignore](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/blob/master/.gitignore) file
 
-Future features:
-* clone the bundle via commandline as an alternative to generate:bundle
-* multiple languages
-* provide tutorials
-* more information on routing and forms
+Future features and documentation (help appreciated):
+* clone the bundle via command as an alternative to generate:bundle
+* multiple languages / locale / i18n examples
+* provide tutorials / blog-posts (yaml, caching with Varnish, Vagrant etc.)
+* more info on cache management
+* more logging (via monolog)
+* more information on routing/paths, assetic and forms
+* custom exceptions
+* add edge side include (esi), session, validator and redirect tests
+* add mime-type tests like xml and json tests
+* Object-relational mapping (ORM): Propel/Doctrine entity integration?
+* html5 boilerplate?
 
 Links:
 * [Best Practice Bundle on Packagist.org](http://packagist.org/packages/LilaConcepts/LilaConceptsBestPracticeBundle)
