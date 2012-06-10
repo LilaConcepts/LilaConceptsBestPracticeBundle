@@ -136,11 +136,10 @@ git clone ${GITHUBURL} ${BUNDLE}
 cd ${BUNDLE}
 
 FILES=`find . -regex '.*/*.[php|yml]' -type f`
-sed -i '' -e 's/LilaConcepts\\Bundle\\LilaConceptsBestPracticeBundle/'${COMPANY}'\\Bundle\\'${BUNDLE}'/g' ${FILES}
+sed -i '' -e 's/LilaConcepts\\Bundle\\LilaConceptsBestPracticeBundle/'${COMPANY}'\\Bundle\\'${COMPANY}${BUNDLE}'/g' ${FILES}
 sed -i '' -e 's/lilaconcepts_bestpractice/'${LOGICALNAME}'/g' ${FILES}
-sed -i '' -e 's/LilaConceptsBestPracticeBundle/'${COMPLETENAME}Bundle'/g' ${FILES}
 sed -i '' -e 's/LilaConceptsBestPracticeExtension/'${COMPLETENAME}Extension'/g' ${FILES}
-sed -i '' -e 's/LilaConceptsBestPracticeBundle/'${BUNDLE}'/g' composer.json
+sed -i '' -e 's/LilaConceptsBestPracticeBundle/'${COMPLETENAME}Bundle'/g' ${FILES} composer.json
 sed -i '' -e 's/LilaConcepts/'${COMPANY}'/g' composer.json
 
 mv ./DependencyInjection/LilaConceptsBestPracticeExtension.php ./DependencyInjection/${COMPLETENAME}Extension.php
