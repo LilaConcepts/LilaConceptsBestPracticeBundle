@@ -38,6 +38,7 @@ Installation
 
 Add the following line to your composer.json file.
 
+```json
     // composer.json
     {
         // ...
@@ -49,6 +50,7 @@ Add the following line to your composer.json file.
 
         // ...
     }
+```
 
 If you haven't allready done so, get Composer ([make sure it's up-to-date](http://getcomposer.org/doc/03-cli.md#self-update)).
 
