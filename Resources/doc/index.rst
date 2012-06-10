@@ -17,6 +17,9 @@ renaming the bundle (warning! you might break things):
     sed -i '' -e 's/lila_best_practice/'${LOGICALNAME}'/g' ${FILES}
     sed -i '' -e 's/LilaBestPracticeBundle/'${COMPLETENAME}Bundle'/g' ${FILES}
     sed -i '' -e 's/LilaBestPracticeExtension/'${COMPLETENAME}Extension'/g' ${FILES}
+    sed -i '' -e 's/Lila/'${COMPANY}'/g' composer.json
+    sed -i '' -e 's/BestPracticeBundle/'${BUNDLE}'/g' composer.json
+
     mv ./DependencyInjection/LilaBestPracticeExtension.php ./DependencyInjection/${COMPLETENAME}Extension.php
     mv ./LilaBestPracticeBundle.php ./${COMPLETENAME}Bundle.php
     rm -rf .git/
