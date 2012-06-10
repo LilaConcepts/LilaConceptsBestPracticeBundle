@@ -30,7 +30,7 @@ Future features:
 Requirements
 ------------
 
-* Symfony2.1 (PHP 5.3.3 and up)
+* Symfony2.1 (PHP 5.3.3 and up including Composer)
 * Twig
 
 Installation
