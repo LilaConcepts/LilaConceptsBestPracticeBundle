@@ -1,6 +1,6 @@
 What is Best Practice Bundle?
 =============================
-
+ 
 [![Build Status](https://secure.travis-ci.org/LilaConcepts/best-practice-bundle.png?branch=master)](http://travis-ci.org/LilaConcepts/best-practice-bundle)
 
 This is a simple bundle to show different [best practices for Symfony Bundles](http://symfony.com/doc/current/cookbook/bundles/index.html)
