@@ -4,6 +4,7 @@ CONTRIBUTORS
 The Best Practice Bundle is the result of the work of many people who made the code better:
 
 - [Andre Lambert](/afjlambert) from [Lila Concepts](/LilaConcepts)
+- [Evert Littooy](/littooy) from [Lila Concepts](/LilaConcepts)
 
 Inspiration comes from multiple bundles from other Projects:
 
