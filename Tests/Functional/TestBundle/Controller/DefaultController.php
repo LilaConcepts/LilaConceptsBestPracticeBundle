@@ -1,6 +1,6 @@
 <?php
 
-namespace Lila\Bundle\BestPracticeBundle\Tests\Functional\TestBundle\Controller;
+namespace LilaConcepts\Bundle\LilaConceptsBestPracticeBundle\Tests\Functional\TestBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;

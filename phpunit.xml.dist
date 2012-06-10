@@ -14,12 +14,12 @@
     <!--
         <php>
             <ini name="intl.default_locale" value="en"/>
-            <server name="KERNEL_DIR" value="/Users/andrelambert/Sites/digitaalcv/app/" />
+            <server name="KERNEL_DIR" value="/path/to/your/app/" />
         </php>
     -->
 
     <testsuites>
-        <testsuite name="BestPractice Test Suite">
+        <testsuite name="Best Practice Bundle Test Suite">
             <directory>./Tests/</directory>
         </testsuite>
     </testsuites>

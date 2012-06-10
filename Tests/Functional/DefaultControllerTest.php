@@ -1,6 +1,6 @@
 <?php
 
-namespace Lila\Bundle\BestPracticeBundle\Tests\Functional;
+namespace LilaConcepts\Bundle\LilaConceptsBestPracticeBundle\Tests\Functional;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use Symfony\Component\Filesystem\Filesystem;
@@ -28,7 +28,7 @@ class DefaultControllerTest extends WebTestCase
 	protected function setUp()
     {
         $fs = new Filesystem();
-        $fs->remove(sys_get_temp_dir().'/LilaBestPracticeBundle/');
+        $fs->remove(sys_get_temp_dir().'/LilaConceptsBestPracticeBundle/');
     }
 
     static protected function createKernel(array $options = array())

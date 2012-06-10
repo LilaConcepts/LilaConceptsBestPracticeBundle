@@ -1,6 +1,6 @@
 <?php
 
-namespace Lila\Bundle\BestPracticeBundle\Tests\Functional;
+namespace LilaConcepts\Bundle\LilaConceptsBestPracticeBundle\Tests\Functional;
 
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Config\Loader\LoaderInterface;
@@ -31,8 +31,8 @@ class AppKernel extends Kernel
         return array(
             new \Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new \Symfony\Bundle\TwigBundle\TwigBundle(),
-            new \Lila\Bundle\BestPracticeBundle\LilaBestPracticeBundle(),
-            new \Lila\Bundle\BestPracticeBundle\Tests\Functional\TestBundle\TestBundle(),
+            new \LilaConcepts\Bundle\LilaConceptsBestPracticeBundle\LilaBestPracticeBundle(),
+            new \LilaConcepts\Bundle\LilaConceptsBestPracticeBundle\Tests\Functional\TestBundle\TestBundle(),
         );
     }
 
@@ -43,6 +43,6 @@ class AppKernel extends Kernel
 
     public function getCacheDir()
     {
-        return sys_get_temp_dir().'/LilaBestPracticeBundle';
+        return sys_get_temp_dir().'/LilaConceptsBestPracticeBundle';
     }
 }
