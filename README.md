@@ -194,3 +194,11 @@ Contributing
 If you like to help making Best Practice Bundle better, or if you see anything that's
 wrong, send me a personal message or provide a bug report under [issues](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/issues).
 Even better if you could send a pull-request.
+
+Licence
+-------
+
+This bundle is released under the MIT Licence by Lila Concepts B.V., see the
+[LICENCE](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/blob/master/LICENCE)-file for more information.
+Lila Concepts B.V. is a dutch organisation and the creator of [Aandelen Kopen](http://online-aandelenkopen.nl/gratis-beleggingstips/)
+and [Beleggen voor Beginners](http://lerenbeleggenvoorbeginners.nl/beginnen-met-beleggen/) amongst other sites.
