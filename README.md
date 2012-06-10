@@ -21,7 +21,7 @@ This bundle contains:
 * uses [Composer](http://getcomposer.org/doc/) for dependancy management
 * uses [Travis CI](http://about.travis-ci.org/docs/) as a build bot for continuous integration
 * is hosted on [Github](https://github.com/) (with Service Hooks)
-* a customized [.gitignore]((best-practice-bundle/blob/master/.gitignore)) file
+* a customized [.gitignore](best-practice-bundle/blob/master/.gitignore) file
 
 Future features:
 * clone the bundle via commandline as an alternative to generate:bundle
