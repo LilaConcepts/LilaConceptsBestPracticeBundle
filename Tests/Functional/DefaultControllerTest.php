@@ -9,23 +9,17 @@ class DefaultControllerTest extends WebTestCase
 {
     public function testHomepage()
     {
-	//	$this->markTestSkipped('Needs to be run separately because of some DB locking issues.');
-		
+	// $this->markTestSkipped('Needs to be run separately because of some DB locking issues.');
+
         $client = $this->createClient();
         $router = self::$kernel->getContainer()->get('router');
-		$router->generate('homepage');
+        $router->generate('homepage');
 
         $crawler = $client->request('GET', $router->generate('homepage'));
-        print_r($client->getResponse()->getContent());
         $this->assertTrue($crawler->filter('html:contains("hello")')->count() > 0);
     }
 
-	public function testHomepage2()
-	{
-		
-	}
-
-	protected function setUp()
+    protected function setUp()
     {
         $fs = new Filesystem();
         $fs->remove(sys_get_temp_dir().'/LilaConceptsBestPracticeBundle/');
