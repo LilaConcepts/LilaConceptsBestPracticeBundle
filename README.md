@@ -23,7 +23,7 @@ This bundle contains:
 * is hosted on [Github](https://github.com/) (with Service Hooks)
 * a customized [.gitignore](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/blob/master/.gitignore) file
 
-Future features and documentation (help appreciated):
+Future features and documentation (help appreciated, see [improvements under issues](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/issues?labels=enhancement&page=1&state=open)):
 * make /best-practice/ available for the functional test
 * clone the bundle via command as an alternative to generate:bundle
 * multiple languages / locale / i18n examples
