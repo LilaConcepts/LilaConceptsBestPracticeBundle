@@ -5,7 +5,7 @@ The Best Practice Bundle is the result of the work of many people who made the c
  
 - [Andre Lambert](/afjlambert) from [Lila Concepts](/LilaConcepts)
 - [Evert Littooy](/littooy) from [Lila Concepts](/LilaConcepts)
-- [TobiasOberrauch](/TobiasOberrauch)
+- [TobiasOberrauch](/TobiasOberrauch) 
 
 Inspiration comes from multiple bundles from other Projects:
 
