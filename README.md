@@ -42,6 +42,7 @@ Future features and documentation (help appreciated, see [enhancements under iss
 * multiple languages / locale / i18n examples
 * provide tutorials / blog-posts (yaml, caching with Varnish, Vagrant etc.)
 * more info on cache management
+* use the PHP-CS-Fixer
 * more logging (via monolog)
 * more information on routing/paths, assetic and forms
 * custom exceptions
