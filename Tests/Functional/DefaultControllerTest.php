@@ -9,7 +9,7 @@ class DefaultControllerTest extends WebTestCase
 {
     public function testHomepage()
     {
-	// $this->markTestSkipped('Needs to be run separately because of some DB locking issues.');
+    // $this->markTestSkipped('Needs to be run separately because of some DB locking issues.');
 
         $client = $this->createClient();
         $router = self::$kernel->getContainer()->get('router');
@@ -25,7 +25,7 @@ class DefaultControllerTest extends WebTestCase
         $fs->remove(sys_get_temp_dir().'/LilaConceptsBestPracticeBundle/');
     }
 
-    static protected function createKernel(array $options = array())
+    protected static function createKernel(array $options = array())
     {
         return self::$kernel = new AppKernel(
             isset($options['config']) ? $options['config'] : 'default.yml'
