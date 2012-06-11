@@ -44,12 +44,12 @@ The roadmap for the future of this bundle is described below.
 Help appreciated, see [enhancements under issues](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/issues?labels=enhancement&page=1&state=open)).
 Please +1 the enhancements you are interested in.
 
+* use the PHP-CS-Fixer
 * make /best-practice/ available for the functional test
 * clone the bundle via command as an alternative to generate:bundle
 * multiple languages / locale / i18n examples
 * provide tutorials / blog-posts (yaml, caching with Varnish, Vagrant etc.)
 * more info on cache management
-* use the PHP-CS-Fixer
 * more logging (via monolog)
 * more information on routing/paths, assetic and forms
 * custom exceptions
