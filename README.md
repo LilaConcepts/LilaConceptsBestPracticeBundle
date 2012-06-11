@@ -12,7 +12,8 @@ at the [documentation](https://github.com/LilaConcepts/LilaConceptsBestPracticeB
 Of course you can use this bundle as a "Boilerplate" or empty/starter bundle if
 you plan to build your own bundle. [Fork or clone this bundle](#forkclone-the-bundle-for-your-own-use) if you wish. Please search [knpBundles.com](http://knpbundles.com/) before you build a new bundle. See if something simimlar is already out there.
 
-This bundle contains:
+### This bundle contains
+
 * the [directory tree structure](http://symfony.com/doc/current/cookbook/bundles/best_practices.html) advised by Symfony
 * follows the [coding standards](http://symfony.com/doc/current/contributing/code/standards.html)
 * has [documentation examples](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/blob/master/Resources/doc/index.rst) based [on reStructuredText](http://symfony.com/doc/current/contributing/documentation/format.html)
@@ -23,11 +24,13 @@ This bundle contains:
 * is hosted on [Github](https://github.com/) (with Service Hooks)
 * a customized [.gitignore](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/blob/master/.gitignore) file
 
-Links:
+### Links
+
 * [Best Practice Bundle on Packagist.org](http://packagist.org/packages/LilaConcepts/LilaConceptsBestPracticeBundle)
 * [Best Practice Bundle on KnpBundles.com](http://knpbundles.com/LilaConcepts/LilaConceptsBestPracticeBundle)
 * [Best Practice Bundle on Travis CI](http://travis-ci.org/#!/LilaConcepts/LilaConceptsBestPracticeBundle)
 * [Best Practice Forum](https://groups.google.com/forum/#!forum/lila-concepts-symfony2-bestpracticebundle)
+
 
 Bugs and Roadmap
 ----------------
@@ -63,6 +66,7 @@ Requirements
 * Symfony2.1 (PHP 5.3.3 and up including Composer)
 * Twig
 
+
 Installation
 ------------
 
@@ -94,6 +98,7 @@ And install the new bundle
 php composer.phar update LilaConcepts/LilaConceptsBestPracticeBundle
 ```
 
+
 Configure
 ---------
 
@@ -115,6 +120,8 @@ The final step is to add the bundle to your AppKernel.php.
         $bundles[] = new LilaConcepts\Bundle\LilaConceptsBestPracticeBundle\LilaConceptsBestPracticeBundle()
     }
 ```
+
+
 Unittest the bundle
 -------------------
 
@@ -125,6 +132,7 @@ phpunit
 ```
 
 Point your browser to [http://localhost/app_dev.php/best-practice/](http://localhost/app_dev.php/best-practice/) (under development, does not work yet!)
+
 
 Standalone Installation
 -----------------------
@@ -138,6 +146,7 @@ curl -s http://getcomposer.org/installer | php
 php composer.phar install
 phpunit
 ```
+
 
 Fork/clone the Bundle for your own use
 --------------------------------------
@@ -206,11 +215,13 @@ Optional: setup a Github Service Hook so packagist will be informed automaticall
 Now install your bundle [following these instructions](#installation) with your own packagist name of course.
 You can remove the temp/ directory we created and work inside the vendor/.../Bundle/YourBundle directory.
 
+
 Documentation
 -------------
 
 For more information see [Resources/doc/index.rst](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/blob/master/Resources/doc/index.rst).
 Feel free to fix typo's.
+
 
 Contributing
 ------------
@@ -218,6 +229,7 @@ Contributing
 If you like to help making Best Practice Bundle better, or if you see anything that's
 wrong, send me a personal message or provide a bug report under [issues](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/issues).
 Even better if you could send a pull-request. If you have any further questions please [head over to the forum](https://groups.google.com/forum/#!forum/lila-concepts-symfony2-bestpracticebundle).
+
 
 Licence
 -------
