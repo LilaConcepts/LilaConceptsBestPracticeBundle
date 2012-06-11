@@ -45,12 +45,12 @@ The roadmap for the future of this bundle is described below.
 Help appreciated, see [enhancements under issues](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/issues?labels=enhancement&page=1&state=open)).
 Please +1 the enhancements you are interested in.
 
+* use the PHP-CS-Fixer
 * make /best-practice/ available for the functional test
 * clone the bundle via command as an alternative to generate:bundle
 * multiple languages / locale / i18n examples
 * provide tutorials / blog-posts (yaml, caching with Varnish, Vagrant etc.)
 * more info on cache management
-* use the PHP-CS-Fixer
 * more logging (via monolog)
 * more information on routing/paths, assetic and forms
 * custom exceptions
@@ -227,6 +227,7 @@ Feel free to fix typo's.
 Contributing
 ------------
 
+First of all, many thanks to all [the contributors and people who inspired us](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/blob/master/CONTRIBUTORS.md).
 If you like to help making Best Practice Bundle better, or if you see anything that's
 wrong, send me a personal message or provide a bug report under [issues](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/issues).
 Even better if you could send a pull-request. If you have any further questions please [head over to the forum](https://groups.google.com/forum/#!forum/lila-concepts-symfony2-bestpracticebundle).
