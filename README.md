@@ -27,11 +27,13 @@ Links:
 * [Best Practice Bundle on Packagist.org](http://packagist.org/packages/LilaConcepts/LilaConceptsBestPracticeBundle)
 * [Best Practice Bundle on KnpBundles.com](http://knpbundles.com/LilaConcepts/LilaConceptsBestPracticeBundle)
 * [Best Practice Bundle on Travis CI](http://travis-ci.org/#!/LilaConcepts/LilaConceptsBestPracticeBundle)
+* [Best Practicd Forum](https://groups.google.com/forum/#!forum/lila-concepts-symfony2-bestpracticebundle)
 
 Bugs and Roadmap
 ----------------
 
-Before providing bug-reports please [see issues first](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/issues).
+Before providing bug-reports please the [current issues](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/issues)
+and [forum](https://groups.google.com/forum/#!forum/lila-concepts-symfony2-bestpracticebundle) first.
 The roadmap for the future of this bundle is described below.
 
 Future features and documentation (help appreciated, see [enhancements under issues](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/issues?labels=enhancement&page=1&state=open)):
@@ -210,7 +212,7 @@ Contributing
 
 If you like to help making Best Practice Bundle better, or if you see anything that's
 wrong, send me a personal message or provide a bug report under [issues](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/issues).
-Even better if you could send a pull-request.
+Even better if you could send a pull-request. If you have any further questions please [head over to the forum](https://groups.google.com/forum/#!forum/lila-concepts-symfony2-bestpracticebundle).
 
 Licence
 -------
