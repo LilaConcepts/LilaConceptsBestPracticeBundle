@@ -97,17 +97,16 @@ The final step is to add the bundle to your AppKernel.php.
 
     // in AppKernel::registerBundles()
     $bundles = array(
-
         // Dependencies
         new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
         new Symfony\Bundle\TwigBundle\TwigBundle(),
-
-        // Optionally place it in the dev and test-environments only
-        if (in_array($this->getEnvironment(), array('dev', 'test'))) {
-            // ...
-            new LilaConcepts\Bundle\LilaConceptsBestPracticeBundle\LilaConceptsBestPracticeBundle()
-        }
     );
+    
+    // Optionally place it in the dev and test-environments only
+    if (in_array($this->getEnvironment(), array('dev', 'test'))) {
+        // ...
+        $bundles[] = new LilaConcepts\Bundle\LilaConceptsBestPracticeBundle\LilaConceptsBestPracticeBundle()
+    }
 ```
 Unittest the bundle
 -------------------
