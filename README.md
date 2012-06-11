@@ -27,7 +27,7 @@ Links:
 * [Best Practice Bundle on Packagist.org](http://packagist.org/packages/LilaConcepts/LilaConceptsBestPracticeBundle)
 * [Best Practice Bundle on KnpBundles.com](http://knpbundles.com/LilaConcepts/LilaConceptsBestPracticeBundle)
 * [Best Practice Bundle on Travis CI](http://travis-ci.org/#!/LilaConcepts/LilaConceptsBestPracticeBundle)
-* [Best Practicd Forum](https://groups.google.com/forum/#!forum/lila-concepts-symfony2-bestpracticebundle)
+* [Best Practice Forum](https://groups.google.com/forum/#!forum/lila-concepts-symfony2-bestpracticebundle)
 
 Bugs and Roadmap
 ----------------
