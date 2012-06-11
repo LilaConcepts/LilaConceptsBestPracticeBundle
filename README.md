@@ -23,6 +23,17 @@ This bundle contains:
 * is hosted on [Github](https://github.com/) (with Service Hooks)
 * a customized [.gitignore](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/blob/master/.gitignore) file
 
+Links:
+* [Best Practice Bundle on Packagist.org](http://packagist.org/packages/LilaConcepts/LilaConceptsBestPracticeBundle)
+* [Best Practice Bundle on KnpBundles.com](http://knpbundles.com/LilaConcepts/LilaConceptsBestPracticeBundle)
+* [Best Practice Bundle on Travis CI](http://travis-ci.org/#!/LilaConcepts/LilaConceptsBestPracticeBundle)
+
+Bugs and Roadmap
+----------------
+
+Before providing bug-reports please [see issues first](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/issues).
+The roadmap for the future of this bundle is described below.
+
 Future features and documentation (help appreciated, see [enhancements under issues](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/issues?labels=enhancement&page=1&state=open)):
 * make /best-practice/ available for the functional test
 * clone the bundle via command as an alternative to generate:bundle
@@ -37,10 +48,7 @@ Future features and documentation (help appreciated, see [enhancements under iss
 * Object-relational mapping (ORM): Propel/Doctrine entity integration?
 * html5 boilerplate?
 
-Links:
-* [Best Practice Bundle on Packagist.org](http://packagist.org/packages/LilaConcepts/LilaConceptsBestPracticeBundle)
-* [Best Practice Bundle on KnpBundles.com](http://knpbundles.com/LilaConcepts/LilaConceptsBestPracticeBundle)
-* [Best Practice Bundle on Travis CI](http://travis-ci.org/#!/LilaConcepts/LilaConceptsBestPracticeBundle)
+
 
 Requirements
 ------------
