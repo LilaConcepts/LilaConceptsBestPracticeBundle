@@ -36,7 +36,7 @@ Before providing bug-reports please the [current issues](https://github.com/Lila
 and [forum](https://groups.google.com/forum/#!forum/lila-concepts-symfony2-bestpracticebundle) first.
 The roadmap for the future of this bundle is described below.
 
-**Future features and documentation**
+### Future features and documentation
 
 Help appreciated, see [enhancements under issues](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/issues?labels=enhancement&page=1&state=open)).
 Please +1 the enhancements you are interested in.
