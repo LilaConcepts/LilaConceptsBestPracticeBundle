@@ -1,4 +1,3 @@
-
 What is Best Practice Bundle?
 =============================
  
@@ -45,7 +44,6 @@ The roadmap for the future of this bundle is described below.
 Help appreciated, see [enhancements under issues](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/issues?labels=enhancement&page=1&state=open)).
 Please +1 the enhancements you are interested in.
 
-* use the PHP-CS-Fixer
 * make /best-practice/ available for the functional test
 * clone the bundle via command as an alternative to generate:bundle
 * multiple languages / locale / i18n examples
@@ -122,6 +120,19 @@ The final step is to add the bundle to your AppKernel.php.
     }
 ```
 
+### Code Standards Fixer
+
+Optionally you can let the PHP-CS-fixer check for coding standards on every commit. Run the following code
+from your Bundle project-root. Warning: check if you have a pre-commit hook allready in place so you won't override anything.
+
+```bash
+cp hooks/pre-commit-cs-fixer .git/hooks/pre-commit
+chmod a+x .git/hooks/pre-commit
+```
+
+The hook will make sure 'php-cs-fixer.phar' from [fabpot/](https://github.com/fabpot/PHP-CS-Fixer) is available
+in your project root. It checks all the code inside your bundle. If the fixer finds an error it will abort the commit
+and present you with a copy-pastable command for fixing it.
 
 Unittest the bundle
 -------------------
