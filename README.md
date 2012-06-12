@@ -154,7 +154,8 @@ If you want to fix them run:
 
 ### phpDocumentor2
 
-If you want you can generate phpDocumentor2 documentation about your module. If you want to install this run:
+If you want you can generate [phpDocumentor2](https://github.com/phpDocumentor/phpDocumentor2)
+documentation about your module. If you want to install this run:
 
 ```bash
 mkdir -p vendor/phpdocumentor/phpdocumentor
@@ -170,6 +171,9 @@ And generate the doc's
 php cd phpdoc.php --target Resources/doc/generated/phpDocumentor
 ```
 
+Now via your finder/browser open Resources/doc/generated/phpDocumentor/index.html.
+
+
 (unit-) Test the bundle
 -------------------
 
@@ -184,6 +188,8 @@ If you want to get the test-coverage of your code:
 ```bash
 phpunit --coverage-html Resources/doc/generated/code-coverage
 ```
+
+Now via your finder/browser open Resources/doc/generated/code-coverage/index.html.
 
 If you want to test the bundle manually, point your browser to 
 [http://localhost/app_dev.php/best-practice/](http://localhost/app_dev.php/best-practice/)
