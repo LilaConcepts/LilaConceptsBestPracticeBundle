@@ -123,16 +123,32 @@ The final step is to add the bundle to your AppKernel.php.
 ### Code Standards Fixer
 
 Optionally you can let the PHP-CS-fixer check for coding standards on every commit. Run the following code
-from your Bundle project-root. Warning: check if you have a pre-commit hook allready in place so you won't override anything.
+from your Bundle project-root. Warning: check if you have a pre-commit hook allready in place so you won't
+override anything.
 
 ```bash
 cp hooks/pre-commit-cs-fixer .git/hooks/pre-commit
 chmod a+x .git/hooks/pre-commit
 ```
 
-The hook will make sure 'php-cs-fixer.phar' from [fabpot/](https://github.com/fabpot/PHP-CS-Fixer) is available
-in your project root. It checks all the code inside your bundle. If the fixer finds an error it will abort the commit
-and present you with a copy-pastable command for fixing it.
+The hook will make sure 'php-cs-fixer.phar' from [fabpot/PHP-CS-Fixer](https://github.com/fabpot/PHP-CS-Fixer)
+is available in your project root. It checks all the code inside your bundle. If the fixer finds an error it
+will abort the commit and present you with a copy-pastable command for fixing it.
+
+An example of the output
+
+```bash
+afjlambert@iMac:~/Sites/MyBundle (master)$ git commit -a
+Coding standards are not correct, cancelling your commit.
+
+1) LilaConceptsBestPracticeBundle.php (extra_empty_lines)
+
+If you want to fix them run:
+
+    php /Users/afjlambert/Sites/MyBundle/php-cs-fixer.phar fix /Users/afjlambert/Sites/MyBundle --verbose
+
+```
+
 
 Unittest the bundle
 -------------------
