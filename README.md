@@ -31,6 +31,8 @@ you plan to build your own bundle. [Fork or clone this bundle](#forkclone-the-bu
 * [Best Practice Bundle on KnpBundles.com](http://knpbundles.com/LilaConcepts/LilaConceptsBestPracticeBundle)
 * [Best Practice Bundle on Travis CI](http://travis-ci.org/#!/LilaConcepts/LilaConceptsBestPracticeBundle)
 * [Best Practice Forum](https://groups.google.com/forum/#!forum/lila-concepts-symfony2-bestpracticebundle)
+* TODO: include link to unittest code-coverage
+* TODO: include link to phpDocumentor2 documentation
 
 
 Bugs and Roadmap
