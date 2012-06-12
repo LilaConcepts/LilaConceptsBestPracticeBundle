@@ -14,13 +14,13 @@ you plan to build your own bundle. [Fork or clone this bundle](#forkclone-the-bu
 
 ### This bundle contains
 
+* uses [Composer](http://getcomposer.org/doc/) for dependancy management
+* uses [Travis CI](http://about.travis-ci.org/docs/) as a build bot for continuous integration
+* conforms ([and includes](#code-standards-fixer)) [coding standards](http://symfony.com/doc/current/contributing/code/standards.html) by using [fabpot/PHP-CS-Fixer](https://github.com/fabpot/PHP-CS-Fixer)
 * the [directory tree structure](http://symfony.com/doc/current/cookbook/bundles/best_practices.html) advised by Symfony
-* follows the [coding standards](http://symfony.com/doc/current/contributing/code/standards.html)
 * has [documentation examples](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/blob/master/Resources/doc/index.rst) based [on reStructuredText](http://symfony.com/doc/current/contributing/documentation/format.html)
 * uses [Twig](http://twig.sensiolabs.org/) for [templating](http://symfony.com/doc/current/cookbook/templating/index.html)
 * comes with [unittests](http://symfony.com/doc/current/book/testing.html) (including [Functional tests](http://symfony.com/doc/current/cookbook/testing/doctrine.html#functional-testing))
-* uses [Composer](http://getcomposer.org/doc/) for dependancy management
-* uses [Travis CI](http://about.travis-ci.org/docs/) as a build bot for continuous integration
 * is hosted on [Github](https://github.com/) (with Service Hooks)
 * a customized [.gitignore](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/blob/master/.gitignore) file
 
