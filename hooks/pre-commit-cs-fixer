@@ -1,0 +1,17 @@
+#!/bin/sh
+
+PROJECTROOT=`echo $(cd ${0%/*}/../../ && pwd -P)`
+FIXER=php-cs-fixer.phar
+
+if [ ! -e ${PROJECTROOT}${FIXER} ]; then
+	echo "PHP-CS-Fixer not available, downloading to ${PROJECTROOT}${FIXER}..."
+	curl -s http://cs.sensiolabs.org/get/$FIXER > ${PROJECTROOT}${FIXER}
+fi
+
+RES=`php ${PROJECTROOT}${FIXER} fix $PROJECTROOT --verbose --dry-run`
+if [ "$RES" != "" ]; then
+	echo "Coding standards are not correct, cancelling your commit. If you want to fix them run 'php ${PROJECTROOT}${FIXER} fix ${PROJECTROOT} --verbose'"
+	echo $RES
+	exit 1
+fi	
+
