@@ -56,6 +56,7 @@ Please +1 the enhancements you are interested in.
 * add mime-type tests like xml and json tests
 * Object-relational mapping (ORM): Propel/Doctrine entity integration?
 * html5 boilerplate?
+* make this bundle work with ZF2 too?
 
 
 
