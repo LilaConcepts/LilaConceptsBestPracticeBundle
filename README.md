@@ -164,7 +164,7 @@ phpunit
 If you want to get the test-coverage of your code:
 
 ```bash
-phpunit --coverage-html coverage-html
+phpunit --coverage-html Resources/doc/generated/code-coverage
 ```
 
 If you want to test the bundle manually, point your browser to 
