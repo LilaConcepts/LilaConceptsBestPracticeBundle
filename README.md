@@ -17,7 +17,7 @@ you plan to build your own bundle. [Fork or clone this bundle](#forkclone-the-bu
 * uses [Composer](http://getcomposer.org/doc/) for dependancy management
 * uses [Travis CI](http://about.travis-ci.org/docs/) as a build bot for continuous integration
 * conforms ([and includes](#code-standards-fixer)) [coding standards](http://symfony.com/doc/current/contributing/code/standards.html) by using [fabpot/PHP-CS-Fixer](https://github.com/fabpot/PHP-CS-Fixer)
-* comes with [unittests](http://symfony.com/doc/current/book/testing.html) (including [Functional tests](http://symfony.com/doc/current/cookbook/testing/doctrine.html#functional-testing))
+* comes with [unittests](http://symfony.com/doc/current/book/testing.html) (including [Functional tests](http://symfony.com/doc/current/cookbook/testing/doctrine.html#functional-testing) and code-coverage)
 * the [directory tree structure](http://symfony.com/doc/current/cookbook/bundles/best_practices.html) advised by Symfony
 * has [documentation examples](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/blob/master/Resources/doc/index.rst) based [on reStructuredText](http://symfony.com/doc/current/contributing/documentation/format.html)
 * uses [Twig](http://twig.sensiolabs.org/) for [templating](http://symfony.com/doc/current/cookbook/templating/index.html)
@@ -184,7 +184,7 @@ curl -s http://getcomposer.org/installer | php
 php composer.phar install
 ```
 
-You should be able to [unittest the bundle](#unittest-the-bundle) now.
+You should be able to [unittest the bundle](#unit--test-the-bundle) now.
 
 Fork/clone the Bundle for your own use
 --------------------------------------
