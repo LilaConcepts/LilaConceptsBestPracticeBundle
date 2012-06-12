@@ -12,7 +12,9 @@ at the [documentation](https://github.com/LilaConcepts/LilaConceptsBestPracticeB
 Of course you can use this bundle as a "Boilerplate" or empty/starter bundle if
 you plan to build your own bundle. [Fork or clone this bundle](#forkclone-the-bundle-for-your-own-use) if you wish. Please search [knpBundles.com](http://knpbundles.com/) before you build a new bundle. See if something simimlar is already out there.
 
-### This bundle contains
+For active developments see the [Changelog](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/blob/master/CHANGELOG-2.1.md).
+
+### What does this bundle do?
 
 * uses [Composer](http://getcomposer.org/doc/) for dependancy management
 * uses [Travis CI](http://about.travis-ci.org/docs/) as a build bot for continuous integration
