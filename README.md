@@ -184,7 +184,7 @@ curl -s http://getcomposer.org/installer | php
 php composer.phar install
 ```
 
-You should be able to [unittest the bundle](#unittest-the-bundle) now.
+You should be able to [unittest the bundle](#unit--test-the-bundle) now.
 
 Fork/clone the Bundle for your own use
 --------------------------------------
