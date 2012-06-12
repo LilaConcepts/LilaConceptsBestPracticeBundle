@@ -3,7 +3,7 @@ CHANGELOG for 2.1.x
 
 This changelog references the relevant changes (bug and security fixes) done in 2.1 minor versions.
 
-* 2.1.0-alpha (2012-06-10)
+* 2.1.0-alpha (2012-06-12)
 
  * [github.com/phpDocumentor/phpDocumentor2](https://github.com/phpDocumentor/phpDocumentor2) support added
  * [github.com/fabpot/PHP-CS-Fixer](https://github.com/fabpot/PHP-CS-Fixer) support added
