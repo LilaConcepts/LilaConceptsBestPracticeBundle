@@ -54,6 +54,7 @@ Please +1 the enhancements you are interested in.
 * custom exceptions
 * add edge side include (esi), session, validator and redirect tests
 * add mime-type tests like xml and json tests
+* add phpDocumentor2 and code-coverage
 * Object-relational mapping (ORM): Propel/Doctrine entity integration?
 * html5 boilerplate?
 * make this bundle work with ZF2 too?
