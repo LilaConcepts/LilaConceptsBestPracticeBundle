@@ -1,4 +1,3 @@
-
 What is Best Practice Bundle?
 =============================
  
@@ -15,15 +14,15 @@ you plan to build your own bundle. [Fork or clone this bundle](#forkclone-the-bu
 
 ### This bundle contains
 
-* the [directory tree structure](http://symfony.com/doc/current/cookbook/bundles/best_practices.html) advised by Symfony
-* follows the [coding standards](http://symfony.com/doc/current/contributing/code/standards.html)
-* has [documentation examples](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/blob/master/Resources/doc/index.rst) based [on reStructuredText](http://symfony.com/doc/current/contributing/documentation/format.html)
-* uses [Twig](http://twig.sensiolabs.org/) for [templating](http://symfony.com/doc/current/cookbook/templating/index.html)
-* comes with [unittests](http://symfony.com/doc/current/book/testing.html) (including [Functional tests](http://symfony.com/doc/current/cookbook/testing/doctrine.html#functional-testing))
 * uses [Composer](http://getcomposer.org/doc/) for dependancy management
 * uses [Travis CI](http://about.travis-ci.org/docs/) as a build bot for continuous integration
-* is hosted on [Github](https://github.com/) (with Service Hooks)
+* conforms ([and includes](#code-standards-fixer)) [coding standards](http://symfony.com/doc/current/contributing/code/standards.html) by using [fabpot/PHP-CS-Fixer](https://github.com/fabpot/PHP-CS-Fixer)
+* comes with [unittests](http://symfony.com/doc/current/book/testing.html) (including [Functional tests](http://symfony.com/doc/current/cookbook/testing/doctrine.html#functional-testing))
+* the [directory tree structure](http://symfony.com/doc/current/cookbook/bundles/best_practices.html) advised by Symfony
+* has [documentation examples](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/blob/master/Resources/doc/index.rst) based [on reStructuredText](http://symfony.com/doc/current/contributing/documentation/format.html)
+* uses [Twig](http://twig.sensiolabs.org/) for [templating](http://symfony.com/doc/current/cookbook/templating/index.html)
 * a customized [.gitignore](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/blob/master/.gitignore) file
+* is hosted on [Github](https://github.com/) (with Service Hooks for Travis and Composer)
 
 ### Links
 
@@ -45,7 +44,6 @@ The roadmap for the future of this bundle is described below.
 Help appreciated, see [enhancements under issues](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/issues?labels=enhancement&page=1&state=open)).
 Please +1 the enhancements you are interested in.
 
-* use the PHP-CS-Fixer
 * make /best-practice/ available for the functional test
 * clone the bundle via command as an alternative to generate:bundle
 * multiple languages / locale / i18n examples
@@ -120,6 +118,35 @@ The final step is to add the bundle to your AppKernel.php.
         // ...
         $bundles[] = new LilaConcepts\Bundle\LilaConceptsBestPracticeBundle\LilaConceptsBestPracticeBundle()
     }
+```
+
+### Code Standards Fixer
+
+Optionally you can let the PHP-CS-fixer check for coding standards on every commit. Run the following code
+from your Bundle project-root. Warning: check if you have a pre-commit hook allready in place so you won't
+override anything.
+
+```bash
+cp hooks/pre-commit-cs-fixer .git/hooks/pre-commit
+chmod a+x .git/hooks/pre-commit
+```
+
+The hook will make sure 'php-cs-fixer.phar' from [fabpot/PHP-CS-Fixer](https://github.com/fabpot/PHP-CS-Fixer)
+is available in your project root. It checks all the code inside your bundle. If the fixer finds an error it
+will abort the commit and present you with a copy-pastable command for fixing it.
+
+An example of the output
+
+```bash
+afjlambert@iMac:~/Sites/MyBundle (master)$ git commit -a
+Coding standards are not correct, cancelling your commit.
+
+1) LilaConceptsBestPracticeBundle.php (extra_empty_lines)
+
+If you want to fix them run:
+
+    php /Users/afjlambert/Sites/MyBundle/php-cs-fixer.phar fix /Users/afjlambert/Sites/MyBundle --verbose
+
 ```
 
 
