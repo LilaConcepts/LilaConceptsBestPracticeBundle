@@ -40,7 +40,7 @@ For active developments see the [Changelog](https://github.com/LilaConcepts/Lila
 Bugs and Roadmap
 ----------------
 
-Before providing bug-reports please the [current issues](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/issues)
+Before providing bug-reports please read the [current issues](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/issues)
 and [forum](https://groups.google.com/forum/#!forum/lila-concepts-symfony2-bestpracticebundle) first.
 The roadmap for the future of this bundle is described below.
 
