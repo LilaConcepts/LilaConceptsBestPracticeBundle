@@ -152,16 +152,24 @@ If you want to fix them run:
 ```
 
 
-Unittest the bundle
+(unit-) Test the bundle
 -------------------
 
-You can now unittest the module, just type:
+If you want to unittest the bundle, just type this into your bundle-root:
 
 ```bash
 phpunit
 ```
 
-Point your browser to [http://localhost/app_dev.php/best-practice/](http://localhost/app_dev.php/best-practice/) (under development, does not work yet!)
+If you want to get the test-coverage of your code:
+
+```bash
+phpunit --coverage-html coverage-html
+```
+
+If you want to test the bundle manually, point your browser to 
+[http://localhost/app_dev.php/best-practice/](http://localhost/app_dev.php/best-practice/)
+(under development, does not work yet!)
 
 
 Standalone Installation
@@ -174,9 +182,9 @@ git clone https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle.git
 cd LilaConceptsBestPracticeBundle
 curl -s http://getcomposer.org/installer | php
 php composer.phar install
-phpunit
 ```
 
+You should be able to [unittest the bundle](#unittest-the-bundle) now.
 
 Fork/clone the Bundle for your own use
 --------------------------------------
