@@ -18,6 +18,7 @@ you plan to build your own bundle. [Fork or clone this bundle](#forkclone-the-bu
 * uses [Travis CI](http://about.travis-ci.org/docs/) as a build bot for continuous integration
 * conforms ([and includes](#code-standards-fixer)) [coding standards](http://symfony.com/doc/current/contributing/code/standards.html) by using [fabpot/PHP-CS-Fixer](https://github.com/fabpot/PHP-CS-Fixer)
 * comes with [unittests](http://symfony.com/doc/current/book/testing.html) (including [Functional tests](http://symfony.com/doc/current/cookbook/testing/doctrine.html#functional-testing) and code-coverage)
+* generates [phpDocumentor2](https://github.com/phpDocumentor/phpDocumentor2) documentation for your code
 * the [directory tree structure](http://symfony.com/doc/current/cookbook/bundles/best_practices.html) advised by Symfony
 * has [documentation examples](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/blob/master/Resources/doc/index.rst) based [on reStructuredText](http://symfony.com/doc/current/contributing/documentation/format.html)
 * uses [Twig](http://twig.sensiolabs.org/) for [templating](http://symfony.com/doc/current/cookbook/templating/index.html)
@@ -54,7 +55,6 @@ Please +1 the enhancements you are interested in.
 * custom exceptions
 * add edge side include (esi), session, validator and redirect tests
 * add mime-type tests like xml and json tests
-* add phpDocumentor2 and code-coverage
 * Object-relational mapping (ORM): Propel/Doctrine entity integration?
 * html5 boilerplate?
 * make this bundle work with ZF2 too?
