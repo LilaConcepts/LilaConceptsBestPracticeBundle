@@ -17,7 +17,8 @@ you plan to build your own bundle. [Fork or clone this bundle](#forkclone-the-bu
 * uses [Composer](http://getcomposer.org/doc/) for dependancy management
 * uses [Travis CI](http://about.travis-ci.org/docs/) as a build bot for continuous integration
 * conforms ([and includes](#code-standards-fixer)) [coding standards](http://symfony.com/doc/current/contributing/code/standards.html) by using [fabpot/PHP-CS-Fixer](https://github.com/fabpot/PHP-CS-Fixer)
-* comes with [unittests](http://symfony.com/doc/current/book/testing.html) (including [Functional tests](http://symfony.com/doc/current/cookbook/testing/doctrine.html#functional-testing) and code-coverage)
+* comes with [unittests](http://symfony.com/doc/current/book/testing.html) (including [Functional tests](http://symfony.com/doc/current/cookbook/testing/doctrine.html#functional-testing) and [code-coverage](#unit--test-the-bundle))
+* generates [phpDocumentor2](https://github.com/phpDocumentor/phpDocumentor2) documentation for your code
 * the [directory tree structure](http://symfony.com/doc/current/cookbook/bundles/best_practices.html) advised by Symfony
 * has [documentation examples](https://github.com/LilaConcepts/LilaConceptsBestPracticeBundle/blob/master/Resources/doc/index.rst) based [on reStructuredText](http://symfony.com/doc/current/contributing/documentation/format.html)
 * uses [Twig](http://twig.sensiolabs.org/) for [templating](http://symfony.com/doc/current/cookbook/templating/index.html)
@@ -30,6 +31,8 @@ you plan to build your own bundle. [Fork or clone this bundle](#forkclone-the-bu
 * [Best Practice Bundle on KnpBundles.com](http://knpbundles.com/LilaConcepts/LilaConceptsBestPracticeBundle)
 * [Best Practice Bundle on Travis CI](http://travis-ci.org/#!/LilaConcepts/LilaConceptsBestPracticeBundle)
 * [Best Practice Forum](https://groups.google.com/forum/#!forum/lila-concepts-symfony2-bestpracticebundle)
+* TODO: include link to unittest code-coverage
+* TODO: include link to phpDocumentor2 documentation
 
 
 Bugs and Roadmap
@@ -54,7 +57,6 @@ Please +1 the enhancements you are interested in.
 * custom exceptions
 * add edge side include (esi), session, validator and redirect tests
 * add mime-type tests like xml and json tests
-* add phpDocumentor2 and code-coverage
 * Object-relational mapping (ORM): Propel/Doctrine entity integration?
 * html5 boilerplate?
 * make this bundle work with ZF2 too?
@@ -152,6 +154,28 @@ If you want to fix them run:
 ```
 
 
+### phpDocumentor2
+
+If you want you can generate [phpDocumentor2](https://github.com/phpDocumentor/phpDocumentor2)
+documentation about your module. If you want to install this run:
+
+```bash
+mkdir -p vendor/phpdocumentor/phpdocumentor
+cd vendor/phpdocumentor/phpdocumentor
+git clone https://github.com/phpDocumentor/phpDocumentor2.git ./
+../../../composer.phar install
+cd -
+```
+
+And generate the doc's
+
+```bash
+php vendor/phpdocumentor/phpdocumentor/bin/phpdoc.php --target Resources/doc/generated/phpDocumentor
+```
+
+Now via your finder/browser open Resources/doc/generated/phpDocumentor/index.html.
+
+
 (unit-) Test the bundle
 -------------------
 
@@ -166,6 +190,8 @@ If you want to get the test-coverage of your code:
 ```bash
 phpunit --coverage-html Resources/doc/generated/code-coverage
 ```
+
+Now via your finder/browser open Resources/doc/generated/code-coverage/index.html.
 
 If you want to test the bundle manually, point your browser to 
 [http://localhost/app_dev.php/best-practice/](http://localhost/app_dev.php/best-practice/)
@@ -230,9 +256,7 @@ curl -s http://getcomposer.org/installer | php
 php composer.phar install
 ```
 
-Now you can [test your bundle](#unit--test-the-bundle).
-
-Be sure to update the following files before pushing it back to Github:
+Now you can [test your bundle](#unit--test-the-bundle). Be sure to update the following files before pushing it back to Github:
 - composer.json
 - README.md
 - LICENCE
