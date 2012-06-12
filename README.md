@@ -168,7 +168,7 @@ cd -
 And generate the doc's
 
 ```bash
-php cd phpdoc.php --target Resources/doc/generated/phpDocumentor
+php vendor/phpdocumentor/phpdocumentor/bin/phpdoc.php --target Resources/doc/generated/phpDocumentor
 ```
 
 Now via your finder/browser open Resources/doc/generated/phpDocumentor/index.html.
