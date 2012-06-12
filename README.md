@@ -152,6 +152,24 @@ If you want to fix them run:
 ```
 
 
+### phpDocumentor2
+
+If you want you can generate phpDocumentor2 documentation about your module. If you want to install this run:
+
+```bash
+mkdir -p vendor/phpdocumentor/phpdocumentor
+cd vendor/phpdocumentor/phpdocumentor
+git clone https://github.com/phpDocumentor/phpDocumentor2.git ./
+../../../composer.phar install
+cd -
+```
+
+And generate the doc's
+
+```bash
+php cd phpdoc.php --target Resources/doc/generated/phpDocumentor
+```
+
 (unit-) Test the bundle
 -------------------
 
@@ -230,9 +248,7 @@ curl -s http://getcomposer.org/installer | php
 php composer.phar install
 ```
 
-Now you can [test your bundle](#unit--test-the-bundle).
-
-Be sure to update the following files before pushing it back to Github:
+Now you can [test your bundle](#unit--test-the-bundle). Be sure to update the following files before pushing it back to Github:
 - composer.json
 - README.md
 - LICENCE
