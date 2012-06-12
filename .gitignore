@@ -5,6 +5,7 @@
 /php-cs-fixer.phar
 /vendor
 /nbproject
+/coverage-html
 
 *.tmp
 *.log*
