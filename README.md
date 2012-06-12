@@ -228,8 +228,9 @@ Optionally:
 ```bash
 curl -s http://getcomposer.org/installer | php
 php composer.phar install
-phpunit
 ```
+
+Now you can [test your bundle](#unit--test-the-bundle).
 
 Be sure to update the following files before pushing it back to Github:
 - composer.json
