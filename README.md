@@ -159,7 +159,7 @@ If you want to fix them run:
 ### phpDocumentor2
 
 If you want you can generate [phpDocumentor2](https://github.com/phpDocumentor/phpDocumentor2)
-documentation about your module. If you want to install this run:
+documentation about your module. To install run:
 
 ```bash
 mkdir -p vendor/phpdocumentor/phpdocumentor
