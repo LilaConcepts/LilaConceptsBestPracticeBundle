@@ -1,3 +1,3 @@
 LilaConceptsBestPracticeBundle_homepage:
     pattern:  /hello/{name}
-    defaults: { _controller: LilaConceptsBestPracticeBundle:Default:homepage }
+    defaults: { _controller: LilaConceptsBestPracticeBundle:Default:index }
