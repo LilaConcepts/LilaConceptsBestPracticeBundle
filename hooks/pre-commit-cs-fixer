@@ -14,7 +14,7 @@ RES=`php ${PROJECTROOT}${FIXER} fix $PROJECTROOT --verbose --dry-run`
 if [ "$RES" != "" ]; then
 	echo "Coding standards are not correct, cancelling your commit."
 	echo ""
-	echo $RES
+	echo "$RES"
 	echo ""
         echo "If you want to fix them run:"
 	echo ""
